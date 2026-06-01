@@ -6,4 +6,10 @@ header{
     align-items: center;
     background-color: var(--color-footer-header);
     color: var(--color-white);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+}
+
+header nav span a{
+    background-color: red;
 }
