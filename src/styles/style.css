@@ -1,0 +1,9 @@
+@import url(./global.css);
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-footer-header);
+    color: var(--color-white);
+}
