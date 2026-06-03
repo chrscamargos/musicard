@@ -1,15 +1,81 @@
 @import url(./global.css);
 
+body{
+    background-color: var(--color-background);
+}
+
+/*Header da página:*/
+
 header{
     display: flex;
+    height: 92px;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-footer-header);
     color: var(--color-white);
-    font-size: var(--font-size-h2);
+    font-size: var(--font-header-size);
     font-weight: var(--font-weight-h2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.logo-header{
+    cursor: pointer;
+}
+
+.profile{
+    cursor: pointer;
 }
 
 header nav span a{
-    background-color: red;
+    background-color: var(--color-btn-login);
+    border-radius: 10px;
+    padding: 12px 11px 9px 9px;
+}
+
+header nav{
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+}
+
+
+.search{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 400px;
+}
+
+/*Corpo da página*/
+
+.news{
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    justify-content: center;
+    gap: 43px;
+    margin-top: 32px;
+}
+
+.news-left{
+    font-size: var(--font-size-h2);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.news-right{
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.news-left span{
+    font-size: 15px;
+}
+
+.news-right span{
+    font-size: 15px;
 }
