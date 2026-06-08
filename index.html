@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musicard</title>
+    <title>musicard</title>
     <link rel="stylesheet" href="./src/styles/global.css">
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,29 +17,32 @@
     <header>
         <img class="logo-header" src="./src/assets/images/Logo.svg" alt="">
 
-        <div class="header-left">
-            <nav>
-                <a>Artistas</a>
-                <a>Álbuns</a>
-                <a>Ranks</a>
-                <span><a>Avaliar +</a></span>
-            </nav>
-        </div>
+       
+        <nav class="header-left">
+            <a>Artistas</a>
+            <a>Álbuns</a>
+            <a>Ranks</a>
+            
+        </nav>
+       
+        <span><a>Avaliar +</a></span>
 
-        <div class="search">
-            <img src="./src/assets/images/Lupa.svg" alt="">
-            <input type="text" placeholder="Buscar">
-        </div>
-        
-        <img src="./src/assets/images/Linha-vertical.svg" alt="">
+        <div class="container-search-header">
+            <div class="search">
+                <img src="./src/assets/images/Lupa.svg" alt="">
+                <input type="text" placeholder="Buscar">
+            </div>
+            
+            <img src="./src/assets/images/Linha-vertical.svg" alt="">
 
-        <div class="profile">
-            <img src="./src/assets/images/Profile.svg" alt="">
+            <div class="profile">
+                <img src="./src/assets/images/Profile.svg" alt="">
+            </div>
         </div>
 
     </header>
 
-    <!--corpo da página-->
+    <!--noticias-->
 
     <section class="news">
 
@@ -58,6 +61,199 @@
             <p><span>Petal é o novo álbum da Ariana Grande, com lançamento marcado para 31 de julho de 2026.</span></p>
         </div>
     </section>
+
+    <!-- musicas populares (christian) -->
+
+    <section class="popular">
+
+        <section class="popular-hoje">
+            <p>Populares hoje</p>
+            <div class="container-albuns">
+                <img src="./src/assets/images/albuns/Thriller.svg" alt="">
+                <img src="./src/assets/images/albuns/ariana grande.svg" alt="">
+                <img src="./src/assets/images/albuns/justin bieber.svg" alt="">
+                <img src="./src/assets/images/albuns/BTS album.svg" alt="">
+                <img src="./src/assets/images/albuns/musica1.svg" alt="">
+            </div>
+            <div>
+
+            </div>
+        </section>
+
+        <section class="popular-hoje">
+            <p>Populares no Brasil</p>
+            <div class="container-albuns">
+                <img src="./src/assets/images/albuns/musicaPopularBrasil1.svg" alt="">
+                <img src="./src/assets/images/albuns/musicaPopularBrasil2.svg" alt="">
+                <img src="./src/assets/images/albuns/musicaPopularBrasil3.svg" alt="">
+                <img src="./src/assets/images/albuns/musicaPopularBrasil4.svg" alt="">
+                <img src="./src/assets/images/albuns/musicaPopularBrasil5.svg" alt="">
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Artistas (Arthur)-->
+
+    <section class="artistas">
+
+        <h2>Artistas para você</h2>
+        <div class="grupo-artistas">
+            <div class="card-artistas">
+                <img src="./src/assets/images/artistas/Nathan Lima.svg" alt="">
+                <p>Nathan Lima</p>
+            </div>
+            <div class="card-artistas">
+                <img src="./src/assets/images/artistas/Kanye West.svg" alt="">
+                <p>Kanye West</p>
+            </div>
+            <div class="card-artistas">
+                <img src="./src/assets/images/artistas/Henrique e Juliano.svg" alt="">
+                <p>Henrique e Juliano</p>
+            </div>
+            <div class="card-artistas">
+                <img src="./src/assets/images/artistas/Brandão.svg" alt="">
+                <p>Brandão</p>
+            </div>
+            <div class="card-artistas">
+                <img src="./src/assets/images/artistas/MC IG.svg" alt="">
+                <p>MC IG</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Albuns para você (Pedro) -->
+     <!--Álbum para você-->
+    <section class="albuns">
+
+        <div class="teste">
+
+        <h2>Álbuns para você</h2>
+
+        <div class="albuns-foto">
+            <img src="./src/assets/images/albuns/Swagboy 2.svg" alt="Swagboy 2">
+            <p>Phl NoturnBoy</p>
+
+            <div class="albuns-foto">
+            <img src="./src/assets/images/albuns/The Predator.svg" alt="The Predator">
+            <p>Ice Cube</p>
+            </div>
+
+            <div class="albuns-foto">
+            <img src="./src/assets/images/albuns/michael jackson .svg" alt="Thriller">
+            <p>Michael Jackson</p>
+            </div>
+            
+            <div class="albuns-foto">
+            <img src="./src/assets/images/albuns/333.svg" alt="333">
+            <p>Matuê</p>
+            </div>
+
+
+            </div>
+            
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Avaliações (Daniel) -->
+
+        <div class="grade">
+
+        <div class="card">
+            <img class="capa" src="./src/assets/images/mcIg.svg" alt="Capa do álbum">
+            <div class="info">
+                <div class="usuario">
+                    <img class="avatar" src="./src/assets/images/tonyMontana.svg" alt="Avatar">
+                    <span class="nome">nickz67_</span>
+                </div>
+                <p>O título já diz tudo, né? O IG faz um contraponto maneiro. Ao mesmo tempo que ele tá comemorando a
+                    grana, as viagens e o "lazer infinito", ele também solta o verbo sobre o cansaço mental, a falsidade
+                    e como é difícil achar gente de verdade no meio da fama. Faixas como "Mente Barulhenta" e "Sabe o
+                    Meu Coração" mostram bem esse lado mais pensativo.</p>
+                <div class="rodape">
+                    <span class="estrelas"><img src="src/assets/images/" alt=""></span>
+                    <div class="botoes">
+                        <button><img src="./src/assets/images/Like.svg" alt=""></button>
+                        <button><img src="./src/assets/images/Dislike.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="capa" src="./src/assets/images/mtaue.svg" alt="Capa do álbum">
+            <div class="info">
+                <div class="usuario">
+                    <img class="avatar" src="./src/assets/images/batman.svg" alt="Avatar">
+                    <span class="nome">peacefulx17</span>
+                </div>
+                <p>O EP "Sabor Overdose na Yakisoba" do rapper cearense Matuê é um projeto curto (com apenas 3 faixas)
+                    que funciona como um aperitivo bem recebido antes do álbum "333". Produzido em parceria com nomes
+                    como Wiu e Brandão85, o projeto chama a atenção pela participação ativa do próprio Matuê nas
+                    batidas.</p>
+                <div class="rodape">
+                    <span class="estrelas"><img src="src/assets/images/stars.svg" alt=""></span>
+                    <div class="botoes">
+                        <button><img src="./src/assets/images/Like.svg" alt=""></button>
+                        <button><img src="./src/assets/images/Dislike.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img class="capa" src="/src/assets/images/lilPeep.svg" alt="Capa do álbum">
+            <div class="info">
+                <div class="usuario">
+                    <img class="avatar" src="./src/assets/images/bart.svg" alt="Avatar">
+                    <span class="nome">nextgoated18_</span>
+                </div>
+                <p>"Cry Baby é aquele tipo de álbum que parece um abraço triste às 3 da manhã. As batidas fofinhas
+                    enganam, porque as letras acertam bem onde dói. Cada música tem uma energia meio sombria, meio
+                    infantil, que deixa tudo mais estranho e perfeito ao mesmo tempo. É o tipo de álbum que você escuta
+                    olhando pro teto e repensando a vida."</p>
+                <div class="rodape">
+                    <span class="estrelas"><img src="./src/assets/images/stars.svg" alt=""></span>
+                    <div class="botoes">
+                        <button><img src="./src/assets/images/Like.svg" alt=""></button>
+                        <button><img src="./src/assets/images/Dislike.svg" alt=""></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="capa" src="src/assets/images/kendrick.svg" alt="Capa do álbum">
+            <div class="info">
+                <div class="usuario">
+                    <img class="avatar" src="src/assets/images/capitaoP.svg" alt="Avatar">
+                    <span class="nome">lifeisgood07_</span>
+                </div>
+                <p>Este é provavelmente o álbum mais espiritual do Kendrick, mas não de uma forma fofinha. Ele
+                    fala muito sobre o "castigo divino", o medo de Deus e a ideia de estar literalmente
+                    amaldiçoado Além disso, o álbum saiu logo após a eleição do Donald Trump, e faixas como XXX.
+                    Destilam aquela paranoia, raiva e o caos político que se vivia nos Estados Unidos.</p>
+                <div class="rodape">
+                    <span class="estrelas"> <img src="src/assets/images/stars.svg" alt=""></span>
+                    <div class="botoes">
+                        <button><img src="./src/assets/images/Like.svg" alt=""></button>
+                        <button><img src="./src/assets/images/Dislike.svg" alt=""></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer (Guilherme) -->
     
 </body>
 </html>

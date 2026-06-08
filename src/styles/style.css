@@ -4,18 +4,19 @@ body{
     background-color: var(--color-background);
 }
 
-/*Header da página:*/
+/*Header da página (Christian)*/
 
 header{
     display: flex;
-    height: 92px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--color-footer-header);
     color: var(--color-white);
     font-size: var(--font-header-size);
     font-weight: var(--font-weight-h2);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    gap: 92px;
+    padding: 20px 0;
 }
 
 .logo-header{
@@ -26,16 +27,22 @@ header{
     cursor: pointer;
 }
 
-header nav span a{
+header span a{
     background-color: var(--color-btn-login);
     border-radius: 10px;
     padding: 12px 11px 9px 9px;
+    cursor: pointer;
 }
 
 header nav{
     display: flex;
     gap: 40px;
     cursor: pointer;
+}
+
+.container-search-header{
+    display: flex;
+    gap: 25px;
 }
 
 
@@ -49,7 +56,11 @@ header nav{
   width: 400px;
 }
 
-/*Corpo da página*/
+.search input:focus{
+    outline: none;
+}
+
+/*Corpo da página (Christian)*/
 
 .news{
     display: flex;
@@ -57,19 +68,21 @@ header nav{
     color: var(--color-white);
     justify-content: center;
     gap: 43px;
-    margin-top: 32px;
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: solid 1px var(--color-line);
+    padding: 40px 0;
 }
+
 
 .news-left{
     font-size: var(--font-size-h2);
     font-weight: bold;
-    cursor: pointer;
 }
 
 .news-right{
     font-size: 24px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .news-left span{
@@ -79,3 +92,222 @@ header nav{
 .news-right span{
     font-size: 15px;
 }
+
+.news img {
+    cursor: pointer;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-white);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: solid 1px var(--color-line);
+    padding: 40px 0;
+}
+
+.popular img{
+    cursor: pointer;
+}
+
+.container-albuns{
+    display: flex;
+    gap: 51px;
+}
+
+.popular-brasil{
+    display: flex;
+    gap: 51px;
+    align-items: center;
+}
+
+/* Artistas (Arthur) */
+
+.artistas{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: solid 1px var(--color-line);
+    padding: 40px 0;
+}
+
+.artistas h2{
+    color: var(--color-white);
+    font-size: 32px;
+    margin-bottom: 3rem;
+}
+
+.grupo-artistas{
+    display: flex;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+    border-top: 100px;
+    cursor: pointer;
+}
+
+.card-artistas p {
+    font-weight: bold;
+}
+
+.card-artistas{
+    text-align: center;
+    
+}
+
+.card-artistas p{
+    color: var(--color-white);
+}
+
+.card-artistas img{
+    width: 270px;
+    height: 270px;
+    
+}
+
+
+/* Albuns para você(Pedro) */
+
+/* Álbuns para você */
+
+.albuns {
+display: flex;
+flex-direction: start;
+align-items: start;
+width: 80%;
+    border-bottom: solid 1px var(--color-line);
+    padding: 40px 0;
+}
+
+.albuns h2 {
+    color: var(--color-white);
+    font-size: var(--font-header-size);
+    font-weight: var(--font-weight-h2);
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.albuns-foto {
+   text-align: center; 
+}
+
+.albuns-foto img{
+    width: 270px;
+    height: 270px;
+}
+
+.albuns-foto p{
+    color: var(--color-white);
+
+}
+
+.teste {
+    display: flex;
+    gap: 65px;
+    align-items: center;
+    justify-content: center;
+    border-top: 100px;
+    cursor: pointer;
+
+}
+
+
+/* Avaliações (Daniel) */
+
+body {
+  background-color: #0f1117;
+  color: #e2e6f0;
+  font-family: Arial, sans-serif;
+  padding: 40px 100px;
+}
+ 
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+}
+ 
+hr {
+  border: none;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+ 
+.card {
+  background-color: #181c27;
+  border: 1px solid #242838;
+  padding: 30px;
+  display: flex;
+  gap: 16px;
+}
+ 
+.capa {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+ 
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+ 
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ 
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+ 
+.nome {
+  font-weight: bold;
+}
+ 
+p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+ 
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+ 
+ 
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+ 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+
+/* Footer (Guilherme) */
