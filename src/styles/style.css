@@ -370,21 +370,21 @@ main, .main-content {
 }
 
 .discover-section {
-    width: 100%;
-    padding: 30px 4% 30px 4%;
-    background-color: var(--color-background);
-    text-align: left; 
+    width: 80%;         
+    margin: 0 auto;      
+    padding: 30px 0;    
     display: flex;
-    align-items: center;
-    gap: 55px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .discover-title {
     color: var(--color-white);
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-h2);
-    margin-bottom: 24px;
-    height: 90px;
+
+    margin-bottom: 0;
+    height: auto; 
+
 }
 
 .discover-buttons {
