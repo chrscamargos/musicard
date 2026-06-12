@@ -17,6 +17,7 @@ header{
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     gap: 92px;
     padding: 20px 0;
+    
 }
 
 .logo-header{
@@ -30,7 +31,7 @@ header{
 header span a{
     background-color: var(--color-btn-login);
     border-radius: 10px;
-    padding: 12px 11px 9px 9px;
+    padding: 12px 11px 12px 12px;
     cursor: pointer;
 }
 
@@ -50,7 +51,7 @@ header nav{
   display: flex;
   align-items: center;
   gap: 8px;
-  background: white;
+  background: var(--color-white);
   border-radius: 8px;
   padding: 12px 20px;
   width: 400px;
@@ -100,7 +101,6 @@ header nav{
 .popular{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
     color: var(--color-white);
     font-size: var(--font-size-h2);
@@ -113,17 +113,14 @@ header nav{
 
 .popular img{
     cursor: pointer;
+    width: 250px;
+    height: 250px;
 }
 
 .container-albuns{
     display: flex;
     gap: 51px;
-}
-
-.popular-brasil{
-    display: flex;
-    gap: 51px;
-    align-items: center;
+    justify-content: center;
 }
 
 /* Artistas (Arthur) */
@@ -140,8 +137,8 @@ header nav{
 
 .artistas h2{
     color: var(--color-white);
-    font-size: 32px;
-    margin-bottom: 3rem;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
 }
 
 .grupo-artistas{
@@ -150,7 +147,6 @@ header nav{
     align-items: center;
     justify-content: center;
     border-top: 100px;
-    cursor: pointer;
 }
 
 .card-artistas p {
@@ -167,147 +163,302 @@ header nav{
 }
 
 .card-artistas img{
-    width: 270px;
-    height: 270px;
-    
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
 }
 
 
 /* Albuns para você(Pedro) */
 
-/* Álbuns para você */
-
 .albuns {
-display: flex;
-flex-direction: start;
-align-items: start;
-width: 80%;
-    border-bottom: solid 1px var(--color-line);
+    width: 80%;
+    margin: 0 auto;
     padding: 40px 0;
+    border-bottom: 1px solid var(--color-line);
 }
 
 .albuns h2 {
-    color: var(--color-white);
-    font-size: var(--font-header-size);
+    font-size: var(--font-size-h2);
     font-weight: var(--font-weight-h2);
-    cursor: pointer;
-    align-items: center;
-
-}
-
-.albuns-foto {
-   text-align: center; 
-}
-
-.albuns-foto img{
-    width: 270px;
-    height: 270px;
-}
-
-.albuns-foto p{
+    margin-bottom: 30px;
     color: var(--color-white);
-
 }
 
 .teste {
     display: flex;
-    gap: 65px;
-    align-items: center;
-    justify-content: center;
-    border-top: 100px;
-    cursor: pointer;
+    justify-content: center; /* centraliza os cards */
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap; /* quebra linha se faltar espaço */
+}
 
+.albuns-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+}
+
+.albuns-foto img {
+    width: 270px;
+    height: 270px;
+}
+
+.albuns-foto h3 {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.albuns-foto p {
+    color: var(--color-white);
+    font-size: 14px;
+    margin: 0;
 }
 
 
 /* Avaliações (Daniel) */
 
-body {
-  background-color: #0f1117;
-  color: #e2e6f0;
-  font-family: Arial, sans-serif;
-  padding: 40px 100px;
-}
- 
-h1 {
-  font-size: 1.9rem;
-  margin-bottom: 30px;
-}
- 
-hr {
-  border: none;
-  margin-bottom: 30px;
-  margin-top: 60px;
+
+
+.usuario span {
+    color: var(--color-white);
 }
 
 .grade {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 80%;
+    align-items:center;
+    margin: 0 auto;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--color-line);
+    
+}
+
+.grade h2 {
+    color: var(--color-white);
+    margin-bottom: 30px;
 }
  
 .card {
-  background-color: #181c27;
-  border: 1px solid #242838;
-  padding: 30px;
-  display: flex;
-  gap: 16px;
+    background-color: var(--color-primary);
+    padding: 30px;
+    display: flex;
+    gap: 16px;
+    border-radius: 5px;
 }
  
 .capa {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
  
 .info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
  
 .usuario {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
  
 .avatar {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
 }
  
 .nome {
-  font-weight: bold;
+    font-weight: var(--font-weight-h2);
 }
  
-p {
-  color: #ffffff;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  font-weight: bold;
+.card p {
+    color: var(--color-white);
+    font-size: 15px;
+    
 }
  
-.rodape {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
+.nota {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
 }
  
  
 .botoes {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
  
 button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.avaliacoes-populares{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    color: var(--color-white);
+    margin-bottom: -40px;
 }
 
 
 /* Footer (Guilherme) */
+
+.main-footer {
+    background-color: var(--color-footer-header);
+    width: 100%;
+    padding: 30px 60px; 
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 24px; 
+}
+
+.footer-link {
+    color: var(--color-white);
+    font-size: var(--font-size-h3); 
+    font-weight: var(--font-weight-h3);
+    transition: opacity 0.2s;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 18px;
+}
+
+.social-icon {
+    color: var(--color-white);
+    font-size: 24px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+main, .main-content {
+    flex: 1.0 auto;
+}
+
+.discover-section {
+    width: 100%;
+    padding: 30px 4% 30px 4%;
+    background-color: var(--color-background);
+    text-align: left; 
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.discover-title {
+    color: var(--color-white);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    margin-bottom: 24px;
+    height: 90px;
+}
+
+.discover-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; 
+}
+
+.discover-btn {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-line);
+    color: var(--color-white);
+    padding: 18px 24px;
+    border-radius: 12px;
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-h2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+    transition: background 0.2s;
+    text-decoration: none;
+}
+
+.discover-btn:hover {
+    background-color: var(--color-primary);
+}
+
+.discover-btn .arrow {
+    color: var(--color-line);
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.main-footer {
+    background-color: var(--color-footer-header);
+    width: 100%;
+    padding: 40px 4%;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-link {
+    color: var(--color-white);
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-h3);
+    text-decoration: none;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}   
